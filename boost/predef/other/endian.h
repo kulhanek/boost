@@ -133,6 +133,9 @@ information and acquired knowledge:
 #   endif
 #endif
 
+/* KULHANEK - FIX */
+/* BOOST_ARCH_AMD64 -> BOOST_ARCH_X86_64 */
+
 /* Some architectures are strictly one endianess (as opposed
  * the current common bi-endianess).
  */
@@ -148,7 +151,7 @@ information and acquired knowledge:
 #       undef BOOST_ENDIAN_BIG_BYTE
 #       define BOOST_ENDIAN_BIG_BYTE BOOST_VERSION_NUMBER_AVAILABLE
 #   endif
-#   if BOOST_ARCH_AMD64 || \
+#   if BOOST_ARCH_X86_64 || \
         BOOST_ARCH_IA64 || \
         BOOST_ARCH_X86 || \
         BOOST_ARCH_BLACKFIN

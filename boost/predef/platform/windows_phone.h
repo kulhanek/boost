@@ -13,6 +13,11 @@ http://www.boost.org/LICENSE_1_0.txt)
 #include <boost/predef/make.h>
 #include <boost/predef/os/windows.h>
 
+/* KULHANEK - FIX */
+#ifndef WINAPI_FAMILY_PHONE_APP
+#define WINAPI_FAMILY_PHONE_APP 0
+#endif
+
 /*`
 [heading `BOOST_PLAT_WINDOWS_PHONE`]
 
