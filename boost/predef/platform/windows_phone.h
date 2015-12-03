@@ -15,7 +15,7 @@ http://www.boost.org/LICENSE_1_0.txt)
 
 /* KULHANEK - FIX */
 #ifndef WINAPI_FAMILY_PHONE_APP
-#define WINAPI_FAMILY_PHONE_APP 0
+#define WINAPI_FAMILY_PHONE_APP ""
 #endif
 
 /*`
