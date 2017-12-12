@@ -13,7 +13,8 @@
 #include <boost/type_traits/integral_constant.hpp>
 #include <boost/detail/workaround.hpp>
 
-//kulhanek - "BOOST_GCC_VERSION_WORKAROUND_GUARD" is not defined
+// kulhanek - "BOOST_GCC_VERSION_WORKAROUND_GUARD" is not defined
+// avoid -Wundef reports
 //#if BOOST_WORKAROUND(BOOST_GCC_VERSION, < 40700)
 //#include <boost/type_traits/is_abstract.hpp>
 //#endif
