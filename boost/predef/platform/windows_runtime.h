@@ -13,11 +13,6 @@ http://www.boost.org/LICENSE_1_0.txt)
 #include <boost/predef/make.h>
 #include <boost/predef/os/windows.h>
 
-/* KULHANEK - FIX */
-#ifndef WINAPI_FAMILY_PHONE_APP
-#define WINAPI_FAMILY_PHONE_APP ""
-#endif
-
 /*`
 [heading `BOOST_PLAT_WINDOWS_RUNTIME`]
 
@@ -38,7 +33,7 @@ http://www.boost.org/LICENSE_1_0.txt)
 #endif
  
 #if BOOST_PLAT_WINDOWS_RUNTIME
-#   define BOOST_PLAT_WINDOWS_RUNTIME_AVALIABLE
+#   define BOOST_PLAT_WINDOWS_RUNTIME_AVAILABLE
 #   include <boost/predef/detail/platform_detected.h>
 #endif
 
