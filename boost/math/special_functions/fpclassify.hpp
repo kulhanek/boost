@@ -129,6 +129,10 @@ inline bool is_nan_helper(T, const boost::false_type&)
 {
    return false;
 }
+
+// kulhanek
+#define _GLIBCXX_USE_C99_FP_MACROS_DYNAMIC 0
+
 #if defined(BOOST_MATH_USE_FLOAT128) 
 #if defined(BOOST_MATH_HAS_QUADMATH_H)
 inline bool is_nan_helper(__float128 f, const boost::true_type&) { return ::isnanq(f); }
