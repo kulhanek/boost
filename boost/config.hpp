@@ -64,4 +64,13 @@
 #pragma once
 #endif
 
+// kulhanek - https://github.com/boostorg/config/issues/186
+#ifndef BOOST_GCC
+#define BOOST_GCC_WORKAROUND_GUARD 1
+#define BOOST_GCC_VERSION_WORKAROUND_GUARD 1
+#else
+#define BOOST_GCC_WORKAROUND_GUARD 0
+#define BOOST_GCC_VERSION_WORKAROUND_GUARD 0
+#endif
+
 #endif  // BOOST_CONFIG_HPP
